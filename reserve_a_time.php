@@ -77,7 +77,7 @@
         $table_num = $_POST["table_num"];
 
         //delete reservation from sql database
-        $query = "UPDATE table_info SET Occupied = ?, Server_Name = ? WHERE Table_Num = ?;";
+        $query = "UPDATE table_info SET Occupied = ?, Server_Name = ? WHERE Table_Num = ?";
         $stmt = $db->prepare($query);
         $occupied = "N";
         $server_name = "N/A";
@@ -92,6 +92,29 @@
           echo "<p>An error has occurred. Please go back and make sure: </p><br>";
           echo "<p>1) The correct table number was entered</p><br>";
           echo "<p>2) The table is not already available</p><br>";
+        }
+      }
+    }
+    else if(isset($_POST["change_bar_occupancy"])){
+      //check and make sure a value was entered
+      if(empty($_POST["bar_occupancy"])){
+        echo "To change bar occupancy, a value must be entered. Please go back and try again.";
+      }
+      else{
+        //change bar occupancy in mysql database
+        $query = "UPDATE table_info SET Occupied = ? WHERE Table_Num = ?";
+        $stmt = $db->prepare($query);
+        $table_num = 29;
+        $bar_occupancy = $_POST['bar_occupancy'];
+        $stmt->bind_param('si', $bar_occupancy, $table_num);
+        $stmt->execute();
+
+        //let the user know whether it was a success or not
+        if($stmt->affected_rows > 0){
+          echo "<p>Bar Occupancy Changed to: $bar_occupancy</p>";
+        }
+        else{
+          echo "<p>An error has occurred. Please go back and try again.</p><br>";
         }
       }
     }
