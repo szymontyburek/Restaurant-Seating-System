@@ -1,0 +1,42 @@
+h1{
+  text-align: center;
+  font-size: 60px;
+}
+.bar{
+  text-align: center;
+  font-size: 30px;
+}
+h3{
+  font-size: 30px;
+  text-align: center;
+}
+p{
+  font-size: 15px;
+  text-align: center;
+}
+div{
+  display: flex;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.header{
+  background: #cccccc;
+  padding: 5px;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+td{
+  padding: 10px;
+}
+table, th, td{
+  border: 1px solid black;
+}
+button{
+  padding: 5px;
+}
+.go_to_reservation_system{
+  text-align: center;
+}
