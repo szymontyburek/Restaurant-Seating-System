@@ -3,9 +3,9 @@ With the use of PHP and MySQL, this program acts as a seating system for a resta
 
 **_Want to see the website live? Here's the link_**: website link 
 
-##Difficulties encountered and their solutions below 
+## Difficulties encountered and their solutions below 
 
-###Project Difficulties: 
+### Project Difficulties: 
 
 Connecting to the MySQL database in a secure and non-redundant way
 
@@ -13,7 +13,7 @@ Finding out which action the user wants to execute, as the same page allows for 
 
 Catching incorrect data and reporting errors back to the user
 
-###Solutions:
+### Solutions:
 
 Creating a separate file containing the information needed to connect to the database
 
