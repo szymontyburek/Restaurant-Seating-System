@@ -115,13 +115,30 @@
         <form class="" action="reserve_a_time.php" method="post">
           <table>
           <tr class="header">
-            <td style="width: 200px; text-align: center;">Table Number</td>
+            <td style="width: 200px; text-align: center;">Table Number(1-28)</td>
           </tr>
           <tr>
             <td><input type="text" name="table_num" id="table_num" size="25"></td>
           </tr>
          </table>
          <input class="button" type="submit" name="make_table_available" id="make_table_available" value="Make Table Available">
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h2>Change Bar Occupancy:</h2>
+      <div>
+        <form class="" action="reserve_a_time.php" method="post">
+          <table>
+          <tr class="header">
+            <td style="width: 200px; text-align: center;">Bar Occupancy(?/20)</td>
+          </tr>
+          <tr>
+            <td><input type="text" name="bar_occupancy" id="bar_occupancy" size="25"></td>
+          </tr>
+         </table>
+         <input class="button" type="submit" name="change_bar_occupancy" id="change_bar_occupancy" value="Change Bar Occupancy">
         </form>
       </div>
     </section>
@@ -145,7 +162,7 @@
       </div>
     </section>
 
-    <section class="button">
+    <section class="bottom_button">
       <a href="index.php"><button type="button" name="button">Back To Table Sections</button></a>
     </section>
   </body>

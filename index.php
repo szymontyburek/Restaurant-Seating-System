@@ -26,7 +26,7 @@
 
       //display results
       while($stmt->fetch()){
-        echo "<h3>Bar(Table #$table_num): $barPersons</h3>";
+        echo "<h3>Bar: $barPersons / 20</h3>";
       }
        ?>
     </section>
