@@ -1,7 +1,7 @@
 # Restaurant-Seating-System
 With the use of PHP and MySQL, this program acts as a seating system for a restaurant that can be used to reserve and close reservations, edit table availability, and assign servers to tables
 
-**_Want to see the website live? Here's the link_**: website link 
+**_Want to see the website live? Here's the link_**: http://restaurantseatingsystem.com/
 
 ## Difficulties encountered and their solutions below 
 
