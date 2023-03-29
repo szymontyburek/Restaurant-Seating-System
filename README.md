@@ -23,5 +23,5 @@ With the use of PHP and MySQL, this program acts as a seating system for a resta
 
 3) The database can only be modified assuming the proper details were supplied. If this is not the case, an error message will be displayed
 
-4) Hosting the website using AWS EC2 instance
+4) Hosting the website via AWS EC2 instance
 
