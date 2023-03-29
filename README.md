@@ -13,6 +13,8 @@ With the use of PHP and MySQL, this program acts as a seating system for a resta
 
 3) Catching incorrect data and reporting errors back to the user
 
+4) Displaying the website live
+
 ### Solutions:
 
 1) Creating a separate file containing the information needed to connect to the database
@@ -20,4 +22,6 @@ With the use of PHP and MySQL, this program acts as a seating system for a resta
 2) Using PHP POST request to determine which textbox is filled out and carrying on from there
 
 3) The database can only be modified assuming the proper details were supplied. If this is not the case, an error message will be displayed
+
+4) Hosting the website using AWS EC2 instance
 
